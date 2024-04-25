@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form id="formulario">
+    <label for="name"
+      >Nome do cliente
+      <br>
+      <input type="text" name="name" id="name" required value="Miguel"/>
+    </label>
+    <br>
+    <br>
+    <label for="massaCorporal"
+      >Massa Corporal
+      <br>
+      <input type="number" name="massaCorporal" id="massaCorporal" required value="73"/>
+    </label>
+    <br>
+    <br>
+    <select name="etnia" id="etnia" required>
+      <option value="" >Etnia</option>
+      <option value="0" selected>Branco</option>
+      <option value="1.4">Negro</option>
+      <option value="1.8">Asiático</option>
+    </select>
+    <br>
+    <br>
+    <label for="est"
+      >Altura em centímetros
+      <br>
+      <input type="number" name="est" id="est" required value="185""/>
+    </label>
+    <br>
+    <br>
+    <select name="sexo" id="sexo" required>
+      <option value="" >Sexo</option>
+      <option value="1" selected>Masculino</option>
+      <option value="0">Feminino</option>
+    </select>
+    <br>
+    <label for="idade"
+      >Idade
+      <br>
+      <input type="number" name="idade" id="idade" required value="21"/>
+    </label>
+    <br> 
+    <br>
+    <button type="submit" id="createLaudo">
+      Gerar laudo 
+    </button>
+    <br>
+    <br>
+    <label for="">RESULTADO</label>
+    <br>
+    <input type="text" disabled id="resultado">
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>
